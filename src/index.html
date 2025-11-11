@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
     <!--CSS HEADER-->
     <link rel="stylesheet" href="/src/styles/header.css">
+    <!--IMPORTAÇÃO DO JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--ÍCONE DA PÁGINA-->
     <link rel="icon" href="img/makeup-pouch.png" type="image/x-icon">
     <!--TEMA: VENDA DE COSMÉTICOS-->
     <title>Landing Page</title>
+    <!--DESCRIÇÃO DO SITE (SEO ON PAGE)-->
     <meta name="description" content="Sabonetes, velas perfumadas e cosméticos em geral; site inteiro com promoções exclusivas, faça seu primeiro pedido!">
     
 </head>
@@ -23,9 +26,13 @@
             <i class="fa-solid fa-soap" id="nav_logo">Exale</i>
             <!--LISTA DE ITENS NO CABEÇALHO-->
             <ul id="nav_list">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
                     <a href="#menu">Catálogo</a>
+                </li>
+                <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
@@ -35,25 +42,32 @@
             </button>
 
             <!--BOTÃO NO MOBILE-->
-            <button id="mobile-btn">
+            <button id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
-
             <div id="mobile_menu">
-                <!--LISTA DE ITENS NO CABEÇALHO (mobile)-->
-                <ul id="mobile_nav_list">
+            <!--LISTA DE ITENS NO CABEÇALHO (mobile)-->
+            <ul id="mobile_nav_list">
                 <li class="nav-item">
                     <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
                     <a href="#menu">Catálogo</a>
+                </li>
+                <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
-
             <button class="btn-default">
                 Peça aqui
             </button>
             </div>
         </nav>
     </header>
+
+    <!--
+    SCRIPT GLOBAL
+    -->
+    <script src="/src/javascript/script.js"></script>
 </body>
 </html>

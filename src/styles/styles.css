@@ -1,5 +1,6 @@
 /*
 FONTE PADRÃO: MONTSERRAT
+corpo, textos 
 */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
@@ -11,5 +12,30 @@ FONTE PADRÃO: MONTSERRAT
 }
 
 body{
+    /*COR DE FUNDO GERAL*/
     background-color: #fff9ea;
+}
+
+/*BOTÕES: GLOBAL*/
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*COR DOS BOTÕES*/
+    background-color: #eebf6a;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0,0,0, 0.1);
+    cursor: pointer;
+    transition: background-color .3s ease;
+} 
+
+.btn-default:hover{
+    /*
+    COR DO BOTÃO CLAREIA AO
+     PASSAR O MOUSE
+    */
+    background-color:#ebc580;
 }

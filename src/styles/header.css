@@ -3,6 +3,9 @@ header{
     padding: 28px 8%;
 }
 
+/*
+NAV: DEFINIÇÕES GLOBAIS
+*/
 #navbar{
     width: 100%;
     display: flex;
@@ -13,4 +16,79 @@ header{
 #nav_logo{
     font-size: 24px;
     color: #eebf6a;
+}
+
+#nav_list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    /*COR DA FONTE NOS LINKS*/
+    color: #1d1d1dad;
+    font-weight: 600;   
+}
+
+/*
+CLASSE ACTIVE:
+QUANDO O USUÁRIO PASSA O MOUSE PELO LINK
+*/
+.nav-item.active a{
+    color: #1d1d1d;
+    /*COR DO TEXTO SUBLINHADO*/
+    border-bottom: 3px solid  #ffba3a;
+}
+
+/*
+ESCONDE MENU & BOTÃO MOBILE NO DESKTOP
+*/
+#mobile_btn{
+    display: none;
+}
+
+#mobile_menu{
+    display: none; 
+}
+
+/*
+RESPONSIVIDADE
+REVELAR MENU E BOTÕES MOBILE
+ESCONDER NAV DESKTOP
+*/
+@media screen and (max-width: 1170px){
+    #nav_list{
+        display: none;
+    }
+    
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px; 
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    }
 }
