@@ -1,73 +1,310 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--ÍCONES DO SITE-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--CSS GLOBAL-->
-    <link rel="stylesheet" href="/src/styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/styles.css" />
     <!--CSS HEADER-->
-    <link rel="stylesheet" href="/src/styles/header.css">
+    <link rel="stylesheet" href="/src/styles/header.css" />
+    <!--CSS DO MAIN-->
+    <link rel="stylesheet" href="/src/styles/home.css" />
     <!--IMPORTAÇÃO DO JQUERY-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!--ÍCONE DA PÁGINA-->
-    <link rel="icon" href="img/makeup-pouch.png" type="image/x-icon">
+    <link rel="icon" href="img/makeup-pouch.png" type="image/x-icon" />
     <!--TEMA: VENDA DE COSMÉTICOS-->
     <title>Landing Page</title>
     <!--DESCRIÇÃO DO SITE (SEO ON PAGE)-->
-    <meta name="description" content="Sabonetes, velas perfumadas e cosméticos em geral; site inteiro com promoções exclusivas, faça seu primeiro pedido!">
-    
-</head>
-<body>
+    <meta
+      name="description"
+      content="Sabonetes, velas perfumadas e cosméticos em geral; site inteiro com promoções exclusivas, faça seu primeiro pedido!"
+    />
+  </head>
+  <body>
     <header>
-        <nav id="navbar">
-            <!--ÍCONE DO SITE-->
-            <i class="fa-solid fa-soap" id="nav_logo">Exale</i>
-            <!--LISTA DE ITENS NO CABEÇALHO-->
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Catálogo</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
+      <nav id="navbar">
+        <!--ÍCONE DO SITE-->
+        <i class="fa-solid fa-soap" id="nav_logo">Exale</i>
+        <!--LISTA DE ITENS NO CABEÇALHO-->
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
 
-            <button class="btn-default">
-                Peça aqui
-            </button>
+        <button class="btn-default">Peça aqui</button>
 
-            <!--BOTÃO NO MOBILE-->
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div id="mobile_menu">
-            <!--LISTA DE ITENS NO CABEÇALHO (mobile)-->
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Catálogo</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
-            <button class="btn-default">
-                Peça aqui
-            </button>
-            </div>
-        </nav>
+        <!--BOTÃO NO MOBILE-->
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <!--MENU VERSÃO MOBILE-->
+      <div id="mobile_menu">
+        <!--LISTA DE ITENS NO CABEÇALHO (mobile)-->
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+        <button class="btn-default">Peça aqui</button>
+      </div>
     </header>
+    <main id="content">
+      <!--HOME-->
+      <section id="home">
+        <!--ESTILO DE FORMA-->
+        <div class="shape"></div>
+        <!--CALL TO ACTION-->
+        <div id="cta">
+          <h1 class="title">
+            Exale o bem-estar que só o <span>artesanal</span> pode oferecer.
+          </h1>
 
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed
+            nam alias deserunt eaque non vero eveniet, nisi sunt provident
+            cumque aspernatur enim corrupti, reiciendis reprehenderit eum
+            delectus id doloremque?
+          </p>
+
+          <div id="cta_buttons">
+            <!--BOTÃO VER CATÁLOGO-->
+            <a href="#" class="btn-default"> Ver catálogo </a>
+            <!--BOTÃO TELEFONE-->
+            <a href="tel:+5513991616048" id="phone_button">
+              <button class="btn-default">
+                <!--ÍCONE DO TELEFONE-->
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (13) 99161-6048
+            </a>
+          </div>
+          <!--BOTÕES MÍDIA SOCIAL-->
+          <div class="social-media-buttons">
+            <a href="">
+              <!--WHATSAPP-->
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="">
+              <!--INSTAGRAM-->
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <!--FACEBOOK-->
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <!--BANNER-->
+        <div id="banner">
+          <img src="img/velaGirassol_semBG.png" alt="" />
+        </div>
+      </section>
+      <!--MENU-->
+      <section id="menu">
+        <h2 class="section-title">Catálogo</h2>
+        <h3 class="section-subtitle">Nossos melhores cosméticos</h3>
+        <!--EXPOSIÇÃO DE COSMÉTICOS NA PÁGINA-->
+        <div id="soaps">
+            <!--COSMÉTICO 1-->
+            <div class="soap">
+                <!--ÍCONE DE FAVORITO-->
+                <div id="soap-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!--IMAGEM DO COSMÉTICO 1-->
+                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
+                <!--TÍTULO DO COSMÉTICO 1-->
+                <h3 class="soap-title">Vela de limão</h3>
+                <!--DESCRIÇÃO DO COSMÉTICO 1-->
+                <span class="soap-description">
+                    Uma agradável vela com notas cítricas de limão
+                </span>
+                <!--AVALIAÇÃO DO COSMÉTICO 1-->
+                <div class="soap-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(20+)</span>
+                </div>
+                <!--PREÇO DO COSMÉTICO 1-->
+                <div class="soap-price">
+                    <h4>R$ 15,00</h4>
+                    <!--ÍCONE DE CARRINHO-->
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--COSMÉTICO 2-->
+            <div class="soap">
+                <!--ÍCONE DE FAVORITO-->
+                <div id="soap-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!--IMAGEM DO COSMÉTICO 2-->
+                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
+                <!--TÍTULO DO COSMÉTICO 2-->
+                <h3 class="soap-title">Vela de limão</h3>
+                <!--DESCRIÇÃO DO COSMÉTICO 2-->
+                <span class="soap-description">
+                    Uma agradável vela com notas cítricas de limão
+                </span>
+                <!--AVALIAÇÃO DO COSMÉTICO 2-->
+                <div class="soap-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(20+)</span>
+                </div>
+                <!--PREÇO DO COSMÉTICO 2-->
+                <div class="soap-price">
+                    <h4>R$ 15,00</h4>
+                    <!--ÍCONE DE CARRINHO-->
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--COSMÉTICO 3-->
+            <div class="soap">
+                <!--ÍCONE DE FAVORITO-->
+                <div id="soap-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!--IMAGEM DO COSMÉTICO 3-->
+                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
+                <!--TÍTULO DO COSMÉTICO 3-->
+                <h3 class="soap-title">Vela de limão</h3>
+                <!--DESCRIÇÃO DO COSMÉTICO 3-->
+                <span class="soap-description">
+                    Uma agradável vela com notas cítricas de limão
+                </span>
+                <!--AVALIAÇÃO DO COSMÉTICO 3-->
+                <div class="soap-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(20+)</span>
+                </div>
+                <!--PREÇO DO COSMÉTICO 3-->
+                <div class="soap-price">
+                    <h4>R$ 15,00</h4>
+                    <!--ÍCONE DE CARRINHO-->
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--COSMÉTICO 4-->
+            <div class="soap">
+                <!--ÍCONE DE FAVORITO-->
+                <div id="soap-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!--IMAGEM DO COSMÉTICO 4-->
+                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
+                <!--TÍTULO DO COSMÉTICO 4-->
+                <h3 class="soap-title">Vela de limão</h3>
+                <!--DESCRIÇÃO DO COSMÉTICO 4-->
+                <span class="soap-description">
+                    Uma agradável vela com notas cítricas de limão
+                </span>
+                <!--AVALIAÇÃO DO COSMÉTICO 4-->
+                <div class="soap-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(20+)</span>
+                </div>
+                <!--PREÇO DO COSMÉTICO 4-->
+                <div class="soap-price">
+                    <h4>R$ 15,00</h4>
+                    <!--ÍCONE DE CARRINHO-->
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!--COSMÉTICO 5-->
+            <div class="soap">
+                <!--ÍCONE DE FAVORITO-->
+                <div id="soap-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <!--IMAGEM DO COSMÉTICO 5-->
+                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
+                <!--TÍTULO DO COSMÉTICO 5-->
+                <h3 class="soap-title">Vela de limão</h3>
+                <!--DESCRIÇÃO DO COSMÉTICO 5-->
+                <span class="soap-description">
+                    Uma agradável vela com notas cítricas de limão
+                </span>
+                <!--AVALIAÇÃO DO COSMÉTICO 5-->
+                <div class="soap-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(20+)</span>
+                </div>
+                <!--PREÇO DO COSMÉTICO 5-->
+                <div class="soap-price">
+                    <h4>R$ 15,00</h4>
+                    <!--ÍCONE DE CARRINHO-->
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
     <!--
     SCRIPT GLOBAL
     -->
     <script src="/src/javascript/script.js"></script>
-</body>
+  </body>
 </html>
