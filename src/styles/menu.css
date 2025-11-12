@@ -1,0 +1,111 @@
+/*
+ESTILO DO MENU
+*/
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#soaps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+/*
+CARDS - GLOBAL 
+*/
+.soap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  gap: 18px;
+  width: 25%;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/*
+ÍCONE DE FAVORITO
+*/
+#soap_heart {
+  position: absolute;
+  background-color: #eebf6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.563rem;
+  color: #fff9ea;
+  width: 70px;
+  height: 70px;
+  right: -10px;
+  top: -10px;
+  border-radius: 0px 37.5px 0px 42.5px;
+}
+
+/*
+DESCRIÇÃO DOS PRODUTOS
+*/
+.soap-description {
+  color: #434343;
+  text-align: center;
+}
+
+/*
+ÍCONES DE AVALIAÇÃO
+*/
+.soap-rate i {
+  color: #eebf6a;
+}
+
+/*
+PREÇO
+*/
+.soap-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.soap-image {
+  width: 90%;
+  height: 90%;
+}
+
+/*
+RESPONSIVIDADE
+CARDS DO MENU
+*/
+@media screen and (max-width: 1170px) {
+  #soaps {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .soap {
+    width: calc(50% - 12px);
+  }
+}
+
+/*
+MOSTRA APENAS UM CARD
+*/
+@media screen and (max-width: 650px) {
+  .soap {
+    width: 100%;
+  }
+
+  #menu .section-subtitle {
+    text-align: center;
+  }
+}

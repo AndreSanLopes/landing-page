@@ -10,7 +10,7 @@ CONTEÚDO
     /*
     ALTURA DA PÁGINA - ALTURA DO HEADER
     */
-    min-height: calc(100vh - 85px);
+    min-height: calc(100vh - 93px);
     position: relative;
 }
 
@@ -29,7 +29,7 @@ CALL TO ACTION
 TÍTULO DO CALL TO ACTION
 */
 #cta .title{
-    font-size: 3.5rem;
+    font-size: 3.40rem;
     color: #1d1d1d;
 }
 

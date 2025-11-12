@@ -15,8 +15,12 @@
     <link rel="stylesheet" href="/src/styles/styles.css" />
     <!--CSS HEADER-->
     <link rel="stylesheet" href="/src/styles/header.css" />
-    <!--CSS DO MAIN-->
+    <!--CSS DA  HOME-->
     <link rel="stylesheet" href="/src/styles/home.css" />
+    <!--CSS DO MENU-->
+    <link rel="stylesheet" href="/src/styles/menu.css" />
+    <!--CSS DOS DEPOIMENTOS-->
+    <link rel="stylesheet" href="/src/styles/testimonials.css" />
     <!--IMPORTAÇÃO DO JQUERY-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -27,7 +31,7 @@
     <!--ÍCONE DA PÁGINA-->
     <link rel="icon" href="img/makeup-pouch.png" type="image/x-icon" />
     <!--TEMA: VENDA DE COSMÉTICOS-->
-    <title>Landing Page</title>
+    <title>Exale: Cosméticos Naturais</title>
     <!--DESCRIÇÃO DO SITE (SEO ON PAGE)-->
     <meta
       name="description"
@@ -77,7 +81,10 @@
       </div>
     </header>
     <main id="content">
-      <!--HOME-->
+      <!--
+      HOME
+      call to action
+      -->
       <section id="home">
         <!--ESTILO DE FORMA-->
         <div class="shape"></div>
@@ -129,179 +136,230 @@
           <img src="img/velaGirassol_semBG.png" alt="" />
         </div>
       </section>
-      <!--MENU-->
+      <!--
+      MENU
+      produtos
+      -->
       <section id="menu">
         <h2 class="section-title">Catálogo</h2>
-        <h3 class="section-subtitle">Nossos melhores cosméticos</h3>
+        <h3 class="section-subtitle">Nossos melhores produtos</h3>
         <!--EXPOSIÇÃO DE COSMÉTICOS NA PÁGINA-->
         <div id="soaps">
-            <!--COSMÉTICO 1-->
-            <div class="soap">
-                <!--ÍCONE DE FAVORITO-->
-                <div id="soap-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <!--IMAGEM DO COSMÉTICO 1-->
-                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
-                <!--TÍTULO DO COSMÉTICO 1-->
-                <h3 class="soap-title">Vela de limão</h3>
-                <!--DESCRIÇÃO DO COSMÉTICO 1-->
-                <span class="soap-description">
-                    Uma agradável vela com notas cítricas de limão
-                </span>
-                <!--AVALIAÇÃO DO COSMÉTICO 1-->
-                <div class="soap-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(20+)</span>
-                </div>
-                <!--PREÇO DO COSMÉTICO 1-->
-                <div class="soap-price">
-                    <h4>R$ 15,00</h4>
-                    <!--ÍCONE DE CARRINHO-->
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                </div>
+          <!--COSMÉTICO 1-->
+          <div class="soap">
+            <!--ÍCONE DE FAVORITO-->
+            <div id="soap_heart">
+              <i class="fa-solid fa-heart"></i>
             </div>
+            <!--IMAGEM DO COSMÉTICO 1-->
+            <img
+              src="img/velaLimao_semBG.png"
+              class="soap-image"
+              alt="Vela com aroma de limão"
+            />
+            <!--TÍTULO DO COSMÉTICO 1-->
+            <h3 class="soap-title">Vela de limão</h3>
+            <!--DESCRIÇÃO DO COSMÉTICO 1-->
+            <span class="soap-description">
+              Uma agradável vela com notas cítricas de limão
+            </span>
+            <!--AVALIAÇÃO DO COSMÉTICO 1-->
+            <div class="soap-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(20+)</span>
+            </div>
+            <!--PREÇO DO COSMÉTICO 1-->
+            <div class="soap-price">
+              <h4>R$ 15,00</h4>
+              <!--ÍCONE DE CARRINHO-->
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
 
-            <!--COSMÉTICO 2-->
-            <div class="soap">
-                <!--ÍCONE DE FAVORITO-->
-                <div id="soap-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <!--IMAGEM DO COSMÉTICO 2-->
-                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
-                <!--TÍTULO DO COSMÉTICO 2-->
-                <h3 class="soap-title">Vela de limão</h3>
-                <!--DESCRIÇÃO DO COSMÉTICO 2-->
-                <span class="soap-description">
-                    Uma agradável vela com notas cítricas de limão
-                </span>
-                <!--AVALIAÇÃO DO COSMÉTICO 2-->
-                <div class="soap-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(20+)</span>
-                </div>
-                <!--PREÇO DO COSMÉTICO 2-->
-                <div class="soap-price">
-                    <h4>R$ 15,00</h4>
-                    <!--ÍCONE DE CARRINHO-->
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                </div>
+          <!--COSMÉTICO 2-->
+          <div class="soap">
+            <!--ÍCONE DE FAVORITO-->
+            <div id="soap_heart">
+              <i class="fa-solid fa-heart"></i>
             </div>
+            <!--IMAGEM DO COSMÉTICO 2-->
+            <img
+              src="img/velaLimao_semBG.png"
+              class="soap-image"
+              alt="Vela com aroma de limão"
+            />
+            <!--TÍTULO DO COSMÉTICO 2-->
+            <h3 class="soap-title">Vela de limão</h3>
+            <!--DESCRIÇÃO DO COSMÉTICO 2-->
+            <span class="soap-description">
+              Uma agradável vela com notas cítricas de limão
+            </span>
+            <!--AVALIAÇÃO DO COSMÉTICO 2-->
+            <div class="soap-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(20+)</span>
+            </div>
+            <!--PREÇO DO COSMÉTICO 2-->
+            <div class="soap-price">
+              <h4>R$ 15,00</h4>
+              <!--ÍCONE DE CARRINHO-->
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
 
-            <!--COSMÉTICO 3-->
-            <div class="soap">
-                <!--ÍCONE DE FAVORITO-->
-                <div id="soap-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <!--IMAGEM DO COSMÉTICO 3-->
-                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
-                <!--TÍTULO DO COSMÉTICO 3-->
-                <h3 class="soap-title">Vela de limão</h3>
-                <!--DESCRIÇÃO DO COSMÉTICO 3-->
-                <span class="soap-description">
-                    Uma agradável vela com notas cítricas de limão
-                </span>
-                <!--AVALIAÇÃO DO COSMÉTICO 3-->
-                <div class="soap-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(20+)</span>
-                </div>
-                <!--PREÇO DO COSMÉTICO 3-->
-                <div class="soap-price">
-                    <h4>R$ 15,00</h4>
-                    <!--ÍCONE DE CARRINHO-->
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                </div>
+          <!--COSMÉTICO 3-->
+          <div class="soap">
+            <!--ÍCONE DE FAVORITO-->
+            <div id="soap_heart">
+              <i class="fa-solid fa-heart"></i>
             </div>
+            <!--IMAGEM DO COSMÉTICO 3-->
+            <img
+              src="img/velaLimao_semBG.png"
+              class="soap-image"
+              alt="Vela com aroma de limão"
+            />
+            <!--TÍTULO DO COSMÉTICO 3-->
+            <h3 class="soap-title">Vela de limão</h3>
+            <!--DESCRIÇÃO DO COSMÉTICO 3-->
+            <span class="soap-description">
+              Uma agradável vela com notas cítricas de limão
+            </span>
+            <!--AVALIAÇÃO DO COSMÉTICO 3-->
+            <div class="soap-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(20+)</span>
+            </div>
+            <!--PREÇO DO COSMÉTICO 3-->
+            <div class="soap-price">
+              <h4>R$ 15,00</h4>
+              <!--ÍCONE DE CARRINHO-->
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
 
-            <!--COSMÉTICO 4-->
-            <div class="soap">
-                <!--ÍCONE DE FAVORITO-->
-                <div id="soap-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <!--IMAGEM DO COSMÉTICO 4-->
-                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
-                <!--TÍTULO DO COSMÉTICO 4-->
-                <h3 class="soap-title">Vela de limão</h3>
-                <!--DESCRIÇÃO DO COSMÉTICO 4-->
-                <span class="soap-description">
-                    Uma agradável vela com notas cítricas de limão
-                </span>
-                <!--AVALIAÇÃO DO COSMÉTICO 4-->
-                <div class="soap-rate">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span>(20+)</span>
-                </div>
-                <!--PREÇO DO COSMÉTICO 4-->
-                <div class="soap-price">
-                    <h4>R$ 15,00</h4>
-                    <!--ÍCONE DE CARRINHO-->
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                </div>
+          <!--COSMÉTICO 4-->
+          <div class="soap">
+            <!--ÍCONE DE FAVORITO-->
+            <div id="soap_heart">
+              <i class="fa-solid fa-heart"></i>
             </div>
+            <!--IMAGEM DO COSMÉTICO 4-->
+            <img
+              src="img/velaLimao_semBG.png"
+              class="soap-image"
+              alt="Vela com aroma de limão"
+            />
+            <!--TÍTULO DO COSMÉTICO 4-->
+            <h3 class="soap-title">Vela de limão</h3>
+            <!--DESCRIÇÃO DO COSMÉTICO 4-->
+            <span class="soap-description">
+              Uma agradável vela com notas cítricas de limão
+            </span>
+            <!--AVALIAÇÃO DO COSMÉTICO 4-->
+            <div class="soap-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(20+)</span>
+            </div>
+            <!--PREÇO DO COSMÉTICO 4-->
+            <div class="soap-price">
+              <h4>R$ 15,00</h4>
+              <!--ÍCONE DE CARRINHO-->
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!--COSMÉTICO 5-->
-            <div class="soap">
-                <!--ÍCONE DE FAVORITO-->
-                <div id="soap-heart">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-                <!--IMAGEM DO COSMÉTICO 5-->
-                <img src="img/velaLimao_semBG.png" class="soap-heart" alt="Vela com aroma de limão">
-                <!--TÍTULO DO COSMÉTICO 5-->
-                <h3 class="soap-title">Vela de limão</h3>
-                <!--DESCRIÇÃO DO COSMÉTICO 5-->
-                <span class="soap-description">
-                    Uma agradável vela com notas cítricas de limão
-                </span>
-                <!--AVALIAÇÃO DO COSMÉTICO 5-->
-                <div class="soap-rate">
+      <section id="testimonials">
+        <img
+          src="img/LogoAlpha.jpeg"
+          id="testimonial_ceo"
+          alt="Logotipo da Exale"
+        />
+        <div id="testimonials_content">
+          <h2 class="section-title">Depoimentos</h2>
+          <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+
+          <div id="feedbacks">
+            <!--FEEDBACK 1-->
+            <div class="feedback">
+              <img
+                src="img/depoimento01.png"
+                class="feedback-avatar"
+                alt="Foto de um cliente"
+              />
+              <div class="feedback-content">
+                <p>
+                  Nome da cliente
+                  <span>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <span>(20+)</span>
-                </div>
-                <!--PREÇO DO COSMÉTICO 5-->
-                <div class="soap-price">
-                    <h4>R$ 15,00</h4>
-                    <!--ÍCONE DE CARRINHO-->
-                    <button class="btn-default">
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </button>
-                </div>
+                  </span>
+                </p>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus obcaecati alias fuga consectetur. Omnis, corporis. Eos, vitae ullam animi laudantium consequatur distinctio quia unde sequi repellat quos, ea mollitia."</p>
+              </div>
             </div>
+            <!--FEEDBACK 2-->
+            <div class="feedback">
+              <img
+                src="img/depoimento01.png"
+                class="feedback-avatar"
+                alt="Foto de um cliente"
+              />
+              <div class="feedback-content">
+                <p>
+                  Nome da cliente
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus obcaecati alias fuga consectetur. Omnis, corporis. Eos, vitae ullam animi laudantium consequatur distinctio quia unde sequi repellat quos, ea mollitia."</p>
+              </div>
+            </div>
+          </div>
+          <!--BOTÃO DOS DEPOIMENTOS-->
+          <button class="btn-default">
+            Ver mais depoimentos
+          </button>
         </div>
       </section>
     </main>
+
+    <footer>
+      
+    </footer>
     <!--
     SCRIPT GLOBAL
     -->
