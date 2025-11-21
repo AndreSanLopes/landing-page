@@ -29,8 +29,8 @@ CARDS - GLOBAL
   gap: 18px;
   width: 25%;
   padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--btn-social);
+  box-shadow: 0px 0px 12px 4px var(--btn-shadow);
   position: relative;
   overflow: hidden;
 }
@@ -40,12 +40,12 @@ CARDS - GLOBAL
 */
 #soap_heart {
   position: absolute;
-  background-color: #eebf6a;
+  background-color: var(--bg-colorid);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.563rem;
-  color: #fff9ea;
+  color: var(--bg-claro);
   width: 70px;
   height: 70px;
   right: -10px;
@@ -57,7 +57,7 @@ CARDS - GLOBAL
 DESCRIÇÃO DOS PRODUTOS
 */
 .soap-description {
-  color: #434343;
+  color: var(--desc-gray);
   text-align: center;
 }
 
@@ -65,7 +65,7 @@ DESCRIÇÃO DOS PRODUTOS
 ÍCONES DE AVALIAÇÃO
 */
 .soap-rate i {
-  color: #eebf6a;
+  color: var(--bg-colorid);
 }
 
 /*

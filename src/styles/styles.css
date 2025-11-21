@@ -4,6 +4,30 @@ corpo, textos
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
+/*
+IMPORTAÇÃO DE CSS
+*/
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+/*
+IDENTIDADE VISUAL
+CORES PADRÃO DO SITE
+*/
+:root{
+  --bg-claro: #fff9ea;
+  --bg-colorid: #eebf6a;
+  --cor-identidade: #ffba3a;
+  --links: #1d1d1dad;
+  --btn-social: #ffffff;
+  --txt-black: #1d1d1d;
+  --btn-shadow: rgba(0, 0, 0, 0.1);
+  --desc-gray: #434343;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -14,10 +38,11 @@ corpo, textos
 body {
   /*COR DE FUNDO GERAL*/
   background-color: #fff9ea;
+  overflow-x: hidden;
 }
 
-section{
-    padding: 28px 8%;
+section {
+  padding: 28px 8%;
 }
 
 /*BOTÕES: GLOBAL*/
@@ -49,34 +74,34 @@ BOTÕES SOCIAL MEDIA
 */
 
 .social-media-buttons {
-    display: flex;
-    gap: 18px;
+  display: flex;
+  gap: 18px;
 }
 
-.social-media-buttons a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 40px;
-    background-color: #fff;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #1d1d1d;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow .3s ease;
+.social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  background-color: #fff;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1d1d1d;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
-.social-media-buttons a:hover{
-    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+.social-media-buttons a:hover {
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
 }
 
-.section-title{
+.section-title {
   color: #ffba3a;
   font-size: 1.5rem;
 }
 
-.section-subtitle{
+.section-subtitle {
   font-size: 2rem;
 }

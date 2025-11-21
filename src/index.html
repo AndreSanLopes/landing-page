@@ -2,6 +2,18 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <!--
+    SEO ON PAGE:
+    * PALAVRAS-CHAVE
+    * DESCRIÇÃO
+    * AUTOR
+    -->
+    <meta name="keywords" content="cosméticos,sabonetes,velas,beleza" />
+    <meta
+      name="description"
+      content="Sabonetes, velas perfumadas e cosméticos em geral; site inteiro com promoções exclusivas, faça seu primeiro pedido!"
+    />
+    <meta name="author" content="André Lopes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--ÍCONES DO SITE-->
     <link
@@ -13,14 +25,6 @@
     />
     <!--CSS GLOBAL-->
     <link rel="stylesheet" href="/src/styles/styles.css" />
-    <!--CSS HEADER-->
-    <link rel="stylesheet" href="/src/styles/header.css" />
-    <!--CSS DA  HOME-->
-    <link rel="stylesheet" href="/src/styles/home.css" />
-    <!--CSS DO MENU-->
-    <link rel="stylesheet" href="/src/styles/menu.css" />
-    <!--CSS DOS DEPOIMENTOS-->
-    <link rel="stylesheet" href="/src/styles/testimonials.css" />
     <!--IMPORTAÇÃO DO JQUERY-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -31,12 +35,9 @@
     <!--ÍCONE DA PÁGINA-->
     <link rel="icon" href="img/makeup-pouch.png" type="image/x-icon" />
     <!--TEMA: VENDA DE COSMÉTICOS-->
+    <!--SCROLL REVEAL - BIBLIOTECA DE ANIMAÇÕES-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Exale: Cosméticos Naturais</title>
-    <!--DESCRIÇÃO DO SITE (SEO ON PAGE)-->
-    <meta
-      name="description"
-      content="Sabonetes, velas perfumadas e cosméticos em geral; site inteiro com promoções exclusivas, faça seu primeiro pedido!"
-    />
   </head>
   <body>
     <header>
@@ -56,7 +57,9 @@
           </li>
         </ul>
 
-        <button class="btn-default">Peça aqui</button>
+        <a href="https://wa.me/qr/MMPJSCMAS2SII1"
+          ><button class="btn-default">Peça aqui</button></a
+        >
 
         <!--BOTÃO NO MOBILE-->
         <button id="mobile_btn">
@@ -77,7 +80,7 @@
             <a href="#testimonials">Avaliações</a>
           </li>
         </ul>
-        <button class="btn-default">Peça aqui</button>
+        <a href="https://wa.me/qr/MMPJSCMAS2SII1"><button class="btn-default">Peça aqui</button></a>
       </div>
     </header>
     <main id="content">
@@ -95,15 +98,13 @@
           </h1>
 
           <p class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed
-            nam alias deserunt eaque non vero eveniet, nisi sunt provident
-            cumque aspernatur enim corrupti, reiciendis reprehenderit eum
-            delectus id doloremque?
+            Apresentando o conceito em saúde da pele. Sabonetes, hidratantes,
+            gel para banho, velas perfumadas e produtos para massoterapia. <strong>Pedidos sob encomenda</strong>.
           </p>
 
           <div id="cta_buttons">
             <!--BOTÃO VER CATÁLOGO-->
-            <a href="#" class="btn-default"> Ver catálogo </a>
+            <a href="#menu" class="btn-default">Ver catálogo</a>
             <!--BOTÃO TELEFONE-->
             <a href="tel:+5513991616048" id="phone_button">
               <button class="btn-default">
@@ -115,12 +116,12 @@
           </div>
           <!--BOTÕES MÍDIA SOCIAL-->
           <div class="social-media-buttons">
-            <a href="">
+            <a href="https://wa.me/qr/MMPJSCMAS2SII1">
               <!--WHATSAPP-->
               <i class="fa-brands fa-whatsapp"></i>
             </a>
 
-            <a href="">
+            <a href="https://www.instagram.com/exale.cosmeticosnaturais/">
               <!--INSTAGRAM-->
               <i class="fa-brands fa-instagram"></i>
             </a>
@@ -175,10 +176,7 @@
             <!--PREÇO DO COSMÉTICO 1-->
             <div class="soap-price">
               <h4>R$ 15,00</h4>
-              <!--ÍCONE DE CARRINHO-->
-              <button class="btn-default">
-                <i class="fa-solid fa-basket-shopping"></i>
-              </button>
+              <!--ÍCONE DE CARRINHO<button class="btn-default"><i class="fa-solid fa-basket-shopping"></i></button>-->
             </div>
           </div>
 
@@ -212,10 +210,6 @@
             <!--PREÇO DO COSMÉTICO 2-->
             <div class="soap-price">
               <h4>R$ 15,00</h4>
-              <!--ÍCONE DE CARRINHO-->
-              <button class="btn-default">
-                <i class="fa-solid fa-basket-shopping"></i>
-              </button>
             </div>
           </div>
 
@@ -249,10 +243,6 @@
             <!--PREÇO DO COSMÉTICO 3-->
             <div class="soap-price">
               <h4>R$ 15,00</h4>
-              <!--ÍCONE DE CARRINHO-->
-              <button class="btn-default">
-                <i class="fa-solid fa-basket-shopping"></i>
-              </button>
             </div>
           </div>
 
@@ -286,21 +276,21 @@
             <!--PREÇO DO COSMÉTICO 4-->
             <div class="soap-price">
               <h4>R$ 15,00</h4>
-              <!--ÍCONE DE CARRINHO-->
-              <button class="btn-default">
-                <i class="fa-solid fa-basket-shopping"></i>
-              </button>
             </div>
           </div>
         </div>
       </section>
 
       <section id="testimonials">
+        <!--LOGOTIPO-->
         <img
           src="img/LogoAlpha.jpeg"
           id="testimonial_ceo"
           alt="Logotipo da Exale"
         />
+        <!--
+        CONTEÚDO DOS DEPOIMENTOS
+        -->
         <div id="testimonials_content">
           <h2 class="section-title">Depoimentos</h2>
           <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
@@ -308,6 +298,7 @@
           <div id="feedbacks">
             <!--FEEDBACK 1-->
             <div class="feedback">
+              <!--FOTO DO CLIENTE-->
               <img
                 src="img/depoimento01.png"
                 class="feedback-avatar"
@@ -317,6 +308,7 @@
                 <p>
                   Nome da cliente
                   <span>
+                    <!--ÍCONES DE AVALIAÇÃO-->
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -324,11 +316,17 @@
                     <i class="fa-solid fa-star"></i>
                   </span>
                 </p>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus obcaecati alias fuga consectetur. Omnis, corporis. Eos, vitae ullam animi laudantium consequatur distinctio quia unde sequi repellat quos, ea mollitia."</p>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  possimus obcaecati alias fuga consectetur. Omnis, corporis.
+                  Eos, vitae ullam animi laudantium consequatur distinctio quia
+                  unde sequi repellat quos, ea mollitia."
+                </p>
               </div>
             </div>
             <!--FEEDBACK 2-->
             <div class="feedback">
+              <!--FOTO DO CLIENTE-->
               <img
                 src="img/depoimento01.png"
                 class="feedback-avatar"
@@ -338,6 +336,7 @@
                 <p>
                   Nome da cliente
                   <span>
+                    <!--ÍCONES DE AVALIAÇÃO-->
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -345,20 +344,67 @@
                     <i class="fa-solid fa-star"></i>
                   </span>
                 </p>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet possimus obcaecati alias fuga consectetur. Omnis, corporis. Eos, vitae ullam animi laudantium consequatur distinctio quia unde sequi repellat quos, ea mollitia."</p>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  possimus obcaecati alias fuga consectetur. Omnis, corporis.
+                  Eos, vitae ullam animi laudantium consequatur distinctio quia
+                  unde sequi repellat quos, ea mollitia."
+                </p>
               </div>
             </div>
           </div>
           <!--BOTÃO DOS DEPOIMENTOS-->
-          <button class="btn-default">
-            Ver mais depoimentos
-          </button>
+          <button class="btn-default">Ver mais depoimentos</button>
         </div>
       </section>
     </main>
 
     <footer>
-      
+      <!--ONDA ESTIULIZADA (SVG)-->
+      <svg
+        id="wave"
+        style="transform: rotate(180deg); transition: 0.3s"
+        viewBox="0 0 1440 100"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+            <stop stop-color="rgba(255, 249, 234, 1)" offset="0%"></stop>
+            <stop stop-color="rgba(255, 249, 234, 1)" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path
+          style="transform: translate(0, 0px); opacity: 1"
+          fill="url(#sw-gradient-0)"
+          d="M0,90L10,75C20,60,40,30,60,18.3C80,7,100,13,120,21.7C140,30,160,40,180,43.3C200,47,220,43,240,38.3C260,33,280,27,300,26.7C320,27,340,33,360,40C380,47,400,53,420,50C440,47,460,33,480,23.3C500,13,520,7,540,18.3C560,30,580,60,600,73.3C620,87,640,83,660,78.3C680,73,700,67,720,63.3C740,60,760,60,780,50C800,40,820,20,840,23.3C860,27,880,53,900,53.3C920,53,940,27,960,25C980,23,1000,47,1020,48.3C1040,50,1060,30,1080,33.3C1100,37,1120,63,1140,63.3C1160,63,1180,37,1200,26.7C1220,17,1240,23,1260,33.3C1280,43,1300,57,1320,66.7C1340,77,1360,83,1380,78.3C1400,73,1420,57,1430,48.3L1440,40L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"
+        ></path>
+      </svg>
+
+      <div id="footer_items">
+        <span id="copyright">
+          <!--AUTOR-->
+          &copy 2025 Exale - Cosméticos Naturais
+        </span>
+
+        <!--BOTÕES MÍDIA SOCIAL-->
+        <div class="social-media-buttons">
+          <a href="https://wa.me/qr/MMPJSCMAS2SII1">
+            <!--WHATSAPP-->
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="https://www.instagram.com/exale.cosmeticosnaturais/">
+            <!--INSTAGRAM-->
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <!--FACEBOOK-->
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
     </footer>
     <!--
     SCRIPT GLOBAL

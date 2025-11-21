@@ -1,0 +1,55 @@
+/*
+CSS - RODAPÉ
+*/
+footer {
+  background-color: var(--bg-colorid);
+  margin: 0;
+  padding: 0;
+}
+
+/*
+SVG - ONDA DO FOOTER
+*/
+footer svg {
+  display: block;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  max-width: 100%;
+}
+
+/*
+CONTEÚDO
+*/
+#footer_items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8% 24px 8%;
+  align-items: center;
+}
+
+/*
+SÍMBOLO COPYRIGHT
+*/
+#copyright {
+  color: var(--txt-black);
+  font-weight: 500;
+}
+
+/*
+RESPONSIVIDADE
+*/
+
+@media screen and (max-width: 600px) {
+    /*
+    AGRUPA O CONTEÚDO EM COLUNAS
+    */
+    #footer_items {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+}

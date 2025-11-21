@@ -5,73 +5,73 @@ ESTILO DA HOME
 /*
 CONTEÚDO
 */
-#home{
-    display: flex;
-    /*
+#home {
+  display: flex;
+  /*
     ALTURA DA PÁGINA - ALTURA DO HEADER
     */
-    min-height: calc(100vh - 93px);
-    position: relative;
+  min-height: calc(100vh - 93px);
+  position: relative;
 }
 
 /*
 CALL TO ACTION
 */
-#cta{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    margin-top: 5%;
+#cta {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 5%;
 }
 
 /*
 TÍTULO DO CALL TO ACTION
 */
-#cta .title{
-    font-size: 3.40rem;
-    color: #1d1d1d;
+#cta .title {
+  font-size: 3.4rem;
+  color: var(--txt-black);
 }
 
 /*
 TEXTO DE DESTAQUE
 CALL TO ACTION
 */
-#cta .title span{
-    color: #ffba3a;
+#cta .title span {
+  color: var(--cor-identidade);
 }
 
-#cta .description{
-    font-size: 1.2rem;
+#cta .description {
+  font-size: 1.2rem;
 }
 
 /*
 BOTÕES E LINKS
 CALL TO ACTION
 */
-#cta_buttons{
-    display: flex;
-    gap: 24px;
+#cta_buttons {
+  display: flex;
+  gap: 24px;
 }
 
-#cta_buttons a{
-    text-decoration: none;
-    color: #1d1d1d;
+#cta_buttons a {
+  text-decoration: none;
+  color: var(--txt-black);
 }
 
-#phone_button{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 8px 14px;
-    font-weight: 500;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 12px; 
+#phone_button {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--btn-social);
+  padding: 8px 14px;
+  font-weight: 500;
+  box-shadow: 0px 0px 12px 4px var(--btn-shadow);
+  border-radius: 12px;
 }
 
-#phone_button button{
-    box-shadow: none;
+#phone_button button {
+  box-shadow: none;
 }
 
 /*
@@ -79,58 +79,58 @@ POSICIONAMENTO DA IMAGEM
 CALL TO ACTION
 */
 
-#banner{
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    width: 80%;
-    z-index: 2;
+#banner {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  width: 80%;
+  z-index: 2;
 }
 
-#banner img{
-    height: 60%;
-    width: fit-content;
+#banner img {
+  height: 60%;
+  width: fit-content;
 }
 
 /*
 FORMA ILUSTRADA
 */
-.shape{
-    background-color: #eebf6a;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    border-radius: 40% 30% 0% 20%;
-    top: 0;
-    right: 0;
-    z-index: 1;
+.shape {
+  background-color: var(--bg-colorid);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  border-radius: 40% 30% 0% 20%;
+  top: 0;
+  right: 0;
+  z-index: 1;
 }
 
 /*
 RESPONSIVIDADE
 CALL TO ACTION
 */
-@media screen and (max-width: 1170px){
-    #home{
-        min-height: 100%;
-        padding-top: 0;
-    }
+@media screen and (max-width: 1170px) {
+  #home {
+    min-height: 100%;
+    padding-top: 0;
+  }
 
-    #banner,
-    #banner img,
-    #home .shape{
-        display: none;
-    }
+  #banner,
+  #banner img,
+  #home .shape {
+    display: none;
+  }
 
-    #cta{
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
+  #cta {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 500px){
-    #phone_button button{
-        display: none;
-    }
+@media screen and (max-width: 500px) {
+  #phone_button button {
+    display: none;
+  }
 }
