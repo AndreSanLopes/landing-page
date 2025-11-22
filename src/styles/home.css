@@ -10,7 +10,7 @@ CONTEÚDO
   /*
     ALTURA DA PÁGINA - ALTURA DO HEADER
     */
-  min-height: calc(100vh - 93px);
+  min-height: calc(100svh - 93px);
   position: relative;
 }
 

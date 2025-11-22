@@ -7,7 +7,7 @@ DEPOIMENTOS
 CONTEINER GERAL
 */
 #testimonials {
-  min-height: calc(100vh - 93px);
+  min-height: calc(100svh - 93px);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -16,6 +16,7 @@ footer svg {
   padding: 0;
   line-height: 0;
   max-width: 100%;
+  margin-top: -1px;
 }
 
 /*
@@ -47,9 +48,5 @@ RESPONSIVIDADE
     #footer_items {
     flex-direction: column;
     gap: 20px;
-  }
-
-  body{
-    overflow-x: hidden;
   }
 }

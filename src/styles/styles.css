@@ -35,10 +35,20 @@ CORES PADRÃO DO SITE
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   /*COR DE FUNDO GERAL*/
   background-color: #fff9ea;
   overflow-x: hidden;
+}
+
+img,
+video{
+  max-width: 100%;
+  height: auto;
 }
 
 section {

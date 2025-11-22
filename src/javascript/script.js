@@ -19,11 +19,15 @@ $(document).ready(function () {
   const sections = $("section");
   const navItems = $(".nav-item");
 
+  //BUFFER DE ATIVAÇÃO DO SCROLL SPY
+  const ACTIVATION_OFFSET = 100;
+
   //FUNÇÃO DE SCROLL : ANIMAÇÃO
   $(window).on("scroll", function () {
     const header = $("header");
+    const headerHeight = header.outerHeight();
     //GUARDAR POSIÇÃO DO SCROLL NA JANELA
-    const scrollPosition = $(window).scrollTop() - header.outerHeight(); //ALTURA DO HEADER É SUBTRAÍDA
+    const scrollPosition = $(window).scrollTop() - headerHeight; //ALTURA DO HEADER É SUBTRAÍDA
     //ANIMAÇÃO SOMBREAMENTO HEADER
     let activeSectionIndex = 0;
     if (scrollPosition <= 0) {
@@ -34,7 +38,7 @@ $(document).ready(function () {
     //LOOP
     sections.each(function (i) {
       const section = $(this); //GUARDA A SESSÃO
-      const sectionTop = section.offset().top - 93; //RECEBE O TOPO DA SESSÃO - ALTURA DA NAV
+      const sectionTop = section.offset().top - headerHeight - ACTIVATION_OFFSET; //RECEBE O TOPO DA SESSÃO - ALTURA DA NAV
       const sectionBottom = sectionTop + section.outerHeight();
 
       //VERIFICA SE A POSIÇÃO DA ROLAGEM
@@ -50,9 +54,32 @@ $(document).ready(function () {
   });
 
   //ANIMAÇÕES SCROLL REVEAL
-  scrollReveal().reveal("#cta", {
+
+  //CALL TO ACTION
+  ScrollReveal().reveal("#cta", {
     origin: "left",
     duration: 2000,
-    distance: "20%"
+    distance: "20%",
+  });
+
+  //CALL TO ACTION
+  ScrollReveal().reveal(".soap", {
+    origin: "left",
+    duration: 2000,
+    distance: "20%",
+  });
+
+  //DEPOIMENTOS - empresa
+  ScrollReveal().reveal("#testimonial_ceo", {
+    origin: "left",
+    duration: 1000,
+    distance: "20%",
+  });
+
+  //DEPOIMENTOS - feedbacks
+  ScrollReveal().reveal(".feedback", {
+    origin: "right",
+    duration: 1000,
+    distance: "20%",
   });
 });
